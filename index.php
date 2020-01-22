@@ -18,6 +18,10 @@ define( 'WP_USE_THEMES', false );
 get_header(); 
 ?>
 
-<h1>Hello World!</h1>
+<main>
+	<section>
+		<h1>Hello world!</h1>
+	</section>
+</main>
 
 <?php get_footer(); ?>

@@ -12,3 +12,70 @@ License URI: TBC
 Text Domain: childs-photography
 Tags: TBC
 */
+
+/*
+===========
+Fonts
+===========
+*/
+
+@font-face {
+    font-family: 'Dosis-Regular';
+    src: url('fonts/Dosis-Regular.ttf'); 
+}
+
+/*
+===========
+Resets
+===========
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis-Regular', Arial, sans-serif;
+}
+
+/*
+==========================
+Elements
+==========================
+*/
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/*
+==========================
+Layouts
+==========================
+*/
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". header header header header header header header header header header ."
+        ". nav nav nav nav nav nav nav nav nav nav ."
+        ". main main main main main main main main main main ."
+        ". footer footer footer footer footer footer footer footer footer footer .";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
