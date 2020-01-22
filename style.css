@@ -12,3 +12,30 @@ License URI: TBC
 Text Domain: childs-photography
 Tags: TBC
 */
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        "main main main main main main main main main main main main"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}

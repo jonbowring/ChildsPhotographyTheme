@@ -9,3 +9,6 @@
         <?php wp_head(); ?>
     </head>
     <body>
+    <div class="content">
+        <header><h2>Hello header</h2></header>
+        <nav><h2>Hello nav</h2></nav>
