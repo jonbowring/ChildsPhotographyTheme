@@ -11,9 +11,19 @@
     <body>
     <div class="content">
         <header>
-            <h2>Hello header</h2>
+            <?php
+                // Print out the site title
+                echo '<h1 class="site-title">' . get_bloginfo( 'name' ) . '</h1>';
+            ?>
+            <div class="header-right">
+                <span>Social</span>
+                <span>Contact</span>
+            </div>
+            
         </header>
         <nav>
-            <h2>Hello nav</h2>
-            <?php wp_nav_menu(); ?>
+            <h2>Menu</h2>
+            <div class="menu-popout">
+                <?php wp_nav_menu(); ?>
+            </div>
         </nav>

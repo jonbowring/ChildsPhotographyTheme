@@ -20,7 +20,7 @@ get_header();
 
 <main>
 	<section>
-		<h1>Hello world!</h1>
+		<h2>Hello world!</h2>
 	</section>
 </main>
 
