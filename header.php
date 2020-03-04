@@ -7,6 +7,27 @@
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
+        <script>
+            jQuery(document).ready(function( $ ) {
+                
+                /*
+                ===============================
+                Listeners
+                ===============================
+                */
+
+                $("nav h2").click(function() {
+                    $('.menu-popout').toggle('slide','left');
+                });
+                
+                /*
+                ===============================
+                Document ready
+                ===============================
+                */
+
+            });
+        </script>
     </head>
     <body>
     <div class="content">

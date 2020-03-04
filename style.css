@@ -143,6 +143,7 @@ Class Styling
     height: 100vh;
     width: 20vw;
     background: rgba(255,255,255,0.8);
+    display: none;
 }
 
 .menu-popout li {
